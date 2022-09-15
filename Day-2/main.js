@@ -33,9 +33,9 @@ const game = new PIXI.Application({
       const back = PIXI.Sprite.from(resources['back'].texture);
       back.scale.set(0.2);
       game.stage.addChild(back);
-      const smily = new PIXI.Texture(resources['front'].texture,
-      new PIXI.Rectangle(0,0,150,150));
-      const front = PIXI.Sprite.from(smily);
-      // front.scale.set(0.2);
+      const cardfront = new PIXI.Texture(resources['front'].texture,
+      new PIXI.Rectangle(0,0,71.5,96));
+      const front = PIXI.Sprite.from(cardfront);
+      front.scale.set(2);
       game.stage.addChild(front);
   }
